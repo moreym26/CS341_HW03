@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--Author: Malory Morey-->
+<!--Source used: W3 Schools-->
+<html>
+    <head>
+      
+        <script
+          src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/> </script>
+        <title> CS341 HW01 Morey 
+        </title>
+        <style>
+            p {
+              text-indent: 50px;
+            }
+            </style>
+            <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--Makes Title-->
+        <h1>Cheesecake Order Form</h1>
+        <!--Creates cheesecake picture using URL-->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg"
+                    alt="This is a picture of a cheesecake."
+                    width="300"
+                    height="300"
+                    class="center"> 
+
+                    <!--toppings title-->
+                    <h3>Quantity Topping</h3>
+                    <!--Drop down option for # of toppings-->
+                    <form action="/OrderSuccess.html">
+                        <select name="Toppings amount" id="Num">
+                          <option value="3">3</option>
+                          <option value="2">2</option>
+                          <option value="1">1</option>
+                          <option value="0">0</option>
+                        </select>
+
+
+                        <!--Selectable bullet point list, only one can be selected at a time-->
+                        <ul>
+                        <input type="radio" id="Plain" name="flavor" value="Plain">
+                        <label for="Plain">Plain</label><br>
+                        <input type="radio" id="Cherry" name="flavor" value="Cherry">
+                        <label for="Cherry">Cherry</label><br>
+                        <input type="radio" id="Chocolate" name="flavor" value="Chocolate">
+                        <label for="Chocolate">Chocolate</label>
+                        </ul>
+                        <!--"Enter" makes space on the page-->
+                        <br><br>
+
+
+                        <!--notes title-->
+                        <h3>Notes:</h3>
+                        <!--Resizable text box with instructions written in it-->
+                        <textarea id="notes" name="notes" rows="4" cols="50">Enter any special instructions here.</textarea>
+                        <br><br>
+
+
+                        <!--Order button-->
+                        <button onclick="myFunction()">Submit</button>
+
+                        <!--Vegan check in special notes, gives alert if true-->
+                        <script src="javascripts/Script.js"></script>
+                                             
+                      </form>
+
+                      <!--Total orders title-->
+                      <h2>Total orders for 
+                        <div class="dropdown">
+                          <button class="dropbtn">Jan</button>
+                          <div class="dropdown-content">
+                            <a href="#">Jan</a>
+                            <a href="#">Feb</a>
+                            <a href="#">March</a>
+                            <a href="#">April</a>
+                            <a href="#">May</a>
+                            <a href="#">June</a>
+                            <a href="#">July</a>
+                            <a href="#">Aug</a>
+                            <a href="#">Sept</a>
+                            <a href="#">Oct</a>
+                            <a href="#">Nov</a>
+                            <a href="#">Dec</a>
+                          </div>
+                        </div>
+                      </h2>
+                      <!--Unordered list-->
+                      <ul>
+                        <li>11 Cherry</li>
+                        <li>17 Chocolate</li>
+                        <li>31 Plain</li>
+                      </ul>  
+    </body>
+</html>
